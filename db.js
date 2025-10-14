@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 // Define the MongoDB connection URL
-// const mongoURL = process.env.MONGODB_URL_LOCAL;
-const mongoURL = process.env.MONGODB_URL;
+const mongoURL = process.env.MONGODB_URL_LOCAL;
+// const mongoURL = process.env.MONGODB_URL;
 //when the connection will establish , the hotels db will automatically get created in the mongodb db
 
 mongoose.connect(mongoURL);
