@@ -15,7 +15,7 @@ router.post("/signup", async (req, res) => {
     const response = await newPerson.save();
     console.log("data saved");
     const payload = {
-      id: response.id,
+      id: response.id, // mongodb treats id as _id
       username: response.username,
     };
     const token = generateToken(payload); //generating token via jwt.sign
